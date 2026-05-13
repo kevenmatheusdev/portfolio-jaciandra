@@ -212,15 +212,18 @@
       #contato .contact-photo { height:auto !important;object-fit:contain !important; }
       
       /* Redes Sociais */
-      #redes .section-inner > div { grid-template-columns: 1fr !important; gap: 3rem !important; }
-      #redes .section-inner > div > div:first-child { flex-direction: column; align-items: center; }
-      #redes .section-inner > div > div:first-child > div:first-child { width: 200px !important; }
-      #redes .section-inner > div > div:first-child > div:last-child { width: 100% !important; max-width: 320px; }
-      #redes .section-inner > div > div:last-child { text-align: center; }
-      #redes .section-inner > div > div:last-child a { margin: 0 auto; }
+      #redes .section-inner > div { grid-template-columns: 1fr !important; gap: 2rem !important; }
+      #redes .section-inner > div > div.fade-left { flex-direction: column !important; align-items: center !important; gap: 1rem !important; }
+      #redes .section-inner > div > div.fade-left > div:first-child { width: 250px !important; }
+      #redes .section-inner > div > div.fade-left > div:last-child { width: 90% !important; max-width: 300px !important; margin-bottom: 0 !important; }
+      #redes .section-inner > div > div.fade-right { text-align: center; }
+      #redes .section-inner > div > div.fade-right .divider { margin: 0.9rem auto 1.5rem; }
+      #redes .section-inner > div > div.fade-right a { margin: 0 auto; }
       
       /* Footer */
       footer .section-inner > div:first-child { grid-template-columns: 1fr !important; gap: 2rem !important; text-align: center; }
+      footer .section-inner > div:first-child a { justify-content: center !important; }
+      footer .section-inner > div:first-child div { align-items: center !important; }
       footer .section-inner > div:last-child { flex-direction: column; align-items: center; text-align: center; }
     }
     
@@ -661,7 +664,7 @@
       <div>
         <div style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--white);margin-bottom:0.4rem;">Jaciandra <span style="color:var(--gold);">Carvalho</span></div>
         <div style="font-size:0.8rem;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.2rem;">Assistente Social</div>
-        <p style="font-size:0.85rem;line-height:1.8;max-width:320px;margin-bottom:1rem;">Comprometida em aplicar seus conhecimentos para promover inclusão, igualdade e desenvolvimento comunitário em São João do Rio do Peixe-PB.</p>
+        <p style="font-size:0.85rem;line-height:1.8;max-width:320px;margin:0 auto 1rem;text-align:center;">Comprometida em aplicar seus conhecimentos para promover inclusão, igualdade e desenvolvimento comunitário em São João do Rio do Peixe-PB.</p>
       </div>
       <div>
         <div style="font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:600;color:var(--white);margin-bottom:1.2rem;">Navegação</div>
