@@ -105,6 +105,9 @@
     .btn-wa-cta:hover { background:rgba(255,255,255,0.22) !important; transform:translateY(-2px); }
     .about-photo-frame { position:relative;border-radius:4px;box-shadow:0 6px 32px rgba(0,0,0,0.1); }
     .about-photo { width:100%;height:auto;display:block;border-radius:4px; }
+    .contact-photo-wrap { background:var(--beige);display:flex;align-items:flex-end;justify-content:center;overflow:hidden; }
+    .contact-photo-wrap picture { display:block;width:100%;height:100%; }
+    .contact-photo { display:block;width:100%;height:100%;object-fit:cover;object-position:center top; }
     @media (max-width: 1024px) {
       .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
       #hero { overflow: visible !important; }
@@ -204,6 +207,9 @@
       #contato > div { grid-template-columns: 1fr !important; }
       #contato > div > div:first-child { padding: 60px 6% !important; }
       #contato > div > div:last-child { max-height: 350px; }
+      #contato .contact-photo-wrap { max-height:none !important;height:auto !important;overflow:visible !important;align-items:center !important; }
+      #contato .contact-photo-wrap picture { height:auto !important; }
+      #contato .contact-photo { height:auto !important;object-fit:contain !important; }
       
       /* Redes Sociais */
       #redes .section-inner > div { grid-template-columns: 1fr !important; gap: 3rem !important; }
@@ -313,10 +319,7 @@
       <div class="fade-left">
         <div style="position:relative;">
           <div class="about-photo-frame">
-            <picture>
-              <source srcset="img/agendamento-mobile.png" media="(max-width: 768px)" />
-              <img src="img/sobre.png" alt="Jaciandra Carvalho - Assistente Social" class="about-photo" />
-            </picture>
+            <img src="img/sobre.png" alt="Jaciandra Carvalho - Assistente Social" class="about-photo" />
             <div style="position:absolute;bottom:24px;right:-20px;background:var(--white);border-radius:var(--radius);padding:1rem 1.4rem;box-shadow:var(--shadow-lg);border:1px solid rgba(201,168,76,0.18);z-index:2;">
               <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--olive);">+5</div>
               <div style="font-size:0.75rem;color:var(--text-mid);font-weight:400;line-height:1.3;">anos de<br>experiência</div>
@@ -582,8 +585,11 @@
       </div>
     </div>
     <!-- Foto lado direito -->
-    <div class="fade-right" style="background:var(--beige);display:flex;align-items:flex-end;justify-content:center;overflow:hidden;">
-      <img src="img/agendamento.jpeg" alt="Jaciandra Carvalho" style="height:100%;width:100%;object-fit:cover;object-position:center top;" />
+    <div class="fade-right contact-photo-wrap">
+      <picture>
+        <source srcset="img/agendamento-mobile.png" media="(max-width: 768px)" />
+        <img src="img/agendamento.jpeg" alt="Jaciandra Carvalho" class="contact-photo" />
+      </picture>
     </div>
   </div>
 </section>
